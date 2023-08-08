@@ -1,0 +1,237 @@
+@import url('http://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] {
+    color:#f2f2f2;
+}
+
+input[type="checkbox"] {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked {
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
+}
+
+.searchs
+{
+    position: relative;
+    width: 400px;
+    margin-left: -170px;
+} */
+ .searchs label
+{
+    position: relative;
+    width: 50%;
+}
+.searchs label input
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    padding: 5px 20px;
+    padding-left: 45px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid var(--black2);
+    /* border-bottom: 2px inset #b1154a;
+    border-top: none;
+    border-left: none;
+    border-right: none; */
+}
+.searchs label ion-icon
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.2em;
+}
+
+.searchhs
+{
+    position: relative;
+    width: 200px;
+    
+} */
+ .searchhs label
+{
+    position: relative;
+    width: 100%;
+}
+.searchhs label input
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    padding: 5px 20px;
+    padding-left: 45px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid var(--black2);
+    /* border-bottom: 2px inset #b1154a;
+    border-top: none;
+    border-left: none;
+    border-right: none; */
+}
+.searchhs label ion-icon
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.2em;
+}
+
+.btn-use{
+	min-width: 8vw;
+    background-color: #3366CC;
+    border-radius: 5px;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    min-height: 2.5vw;
+}
+
+.btn-use:hover{
+	background-color: #0033CC;
+    color: #000000;
+    border: none;
+}
+
+.recentSelect .page-info table{
+	width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.recentSelect .page-info table thead td{
+    font-weight: 600;
+    
+}
+.recentSelect .page-info table tr{
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.recentSelect .page-info table tr:last-child{
+    border-bottom: none;
+}
+.recentSelect .page-info table tbody tr:hover{
+    background: var(--while);
+}
+.recentSelect .page-info table tr td{
+    padding: 10px;
+}	
+.recentSelect .page-info table tr td:last-child{
+    text-align: center;
+}
+.recentSelect .page-info table tr td:nth-child(2){
+    text-align: left;
+}
+.recentSelect .page-info table tr td:nth-child(3){
+    text-align: left;
+}
+
+.exit-customer{
+	border: none;
+    right: 0;
+    width: 40%;
+    background-color: #29b6f6;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    padding: .75em 1.5em;
+    font-size: 1em;
+    height: 35px;
+    margin-left: 45px;
+    vertical-align: middle;
+}
+
+.select-customer{
+	border: none;
+    right: 0;
+    width: 40%;
+    background-color: #29b6f6;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    padding: .75em 1.5em;
+    font-size: 1em;
+    height: 35px;
+    vertical-align: middle;
+}
+
+.recentCustomerss.openCus{
+	display: block;
+}
+
+.recentSelect{
+	display: none;
+}
+
+.recentSelect.open-customer{
+	display: block;
+}
+
+ .recentOrder{
+  	position: absolute;
+  	overflow-y: scroll;
+    overflow-x: hidden;
+    height: 550px;
+ }
+ .recentOrder tbody button{
+  	align-items: flex-end;
+ }
+  
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+ 
+  ::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #6d6d6d; 
+  }
+  
+ .datee{
+	cursor: pointer;
+	border: none;
+	font-size: 15px;
+}
+
+.page-service {
+    margin-left: 40%;
+    margin-bottom: 30px;
+}
+
+.page-service a:hover{
+	color: #FF0000;
+}
+ 
+.page-service a{
+	font-size: 20px;
+	text-decoration: none;
+	color: #0033FF;
+}
+
+#btnViewAll {
+	border: none;
+}
+
+#btnViewAll:hover {
+	cursor: pointer;
+}

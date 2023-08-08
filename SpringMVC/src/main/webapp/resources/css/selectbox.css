@@ -1,0 +1,91 @@
+.wrapper select.wrap{
+    cursor: pointer;
+    width: var(--fieldWidth, 100%);
+    height: 40px;
+    border-radius: 1px;
+    background-color: white;
+    box-shadow: 0 1px 1px rgb(0,0,0,0.2);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: .6em 1.4em .5em .8em;
+    z-index: 1;
+    color: rgb(94, 92, 92);
+  }
+  .recentOrder{
+  	position: absolute;
+  	overflow-y: scroll;
+    overflow-x: hidden;
+    height: 550px;
+  }
+  .recentOrder tbody button{
+  	align-items: flex-end;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+ 
+  ::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #6d6d6d; 
+  }
+  
+  .cardBoxss{
+  display: flex;
+  /* padding: 35px 25px; */
+}
+.close, .box_seach, .box_add{
+  padding: 15px 15px;
+}
+.box_seach label
+{
+position: relative;
+width: 100%;
+}
+.box_seach label input
+{
+width: 340px;
+height: 40px;
+border-radius: 12px;
+padding-left: 45px;
+font-size: 18px;
+border: 1px solid black;
+}
+.box_seach label ion-icon
+{
+position: absolute;
+top: 0px;
+left: 10px;
+font-size: 1.2em;
+}
+.close a ion-icon {
+font-size: 35px;
+color: purple;
+margin-top: 5px;
+}
+.close a ion-icon:hover {
+border-radius: 100%;
+background-color: #999;
+color: white;
+}
+.box_add button.add {
+background-color: #29b6f6;
+border-radius: 10px;
+color: #fff;
+cursor: pointer;
+padding: .75em 1.5em;
+font-size: 0.9em;
+height: 42px;
+border: none;
+}
+.box_add button.add:hover{
+	border: 0.5px solid black;
+}

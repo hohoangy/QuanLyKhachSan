@@ -1,0 +1,245 @@
+@import url('http://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+.tab-item{
+    position: relative;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.25s;
+    display: inline-block;
+}
+
+.tab-item:hover{
+	top: -0.25rem;
+    transition: top 0.25s;
+    border-bottom: 0.05rem solid #272626;
+    
+}
+.tab-item-2{
+    position: relative;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    top: 0;
+    transition: all 0.25s;
+    
+}
+
+.tab-item-2:hover{
+	top: -0.25rem;
+    transition: top 0.25s;
+    border-bottom: 0.05rem solid #272626;
+}
+
+.tab-item-first{
+    padding: 10px 2vw;
+    width: 100%;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.6);
+}
+
+.field__input {
+	font-weight: 700;
+}
+
+.tab-item-second{
+    
+    padding: 10px 10px;
+    width: 100%;   
+}
+.tab-item-third{
+    position: relative; 
+    padding: 10px 10px;
+    width: 100%;   
+}
+.tab-item-third button{
+	min-width: 11vw;
+    background-color: #ffff;
+    border-radius: 10px;
+    color: rgb(27, 27, 27);
+    cursor: pointer;
+}
+.tab-item-third button:hover {
+    background-color: rgb(23, 87, 216);
+    color: #ffff;
+    border: none;
+}
+.tab-item-third td{
+    width: 38%;
+}
+.exit-info{
+    border: none;
+}
+.wrapper select.wrap{
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    border-radius: 1px;
+    background-color: white;
+    box-shadow: 0 1px 1px rgb(0,0,0,0.2);
+    border: none;
+    margin-bottom: 25px;
+    outline: none;
+    font-size: 16px;
+    padding: .6em 1.4em .5em .8em;
+    z-index: 1;
+    color: rgb(94, 92, 92);
+   }
+
+.recentCustomerss.open-info{
+    display: block;
+}
+
+  
+.hover-arrow {
+    opacity: 0;
+    z-index: 110;
+    position: absolute;
+    left: 90px;
+    top: 90px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+  
+.hover-image {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    z-index: 100;
+    position: absolute;
+    opacity: 0;
+}
+  
+.hover-text {
+    position: absolute;
+    z-index: 90;
+    width: 200px;
+    height: 0px;
+    margin-top: 100px;
+    font-family: 'Arial Black';
+    background: #333;
+    color: #fff;
+    opacity: 0;
+}
+
+.btn-thue{
+    border: none;
+    margin-left: 30px;
+    padding-top: 5px;
+    background-color: #29b6f6;
+    border-radius: 10px;
+    color: #fff;
+    padding: .75em 1.5em;
+    cursor: pointer;
+}
+.btn-thue:hover{
+    background-color: #0563af;
+}
+.exit-info{
+    margin-left: 7vw;
+}
+.pay-info{
+    border: none;
+    background-color: #8452A5;
+    margin-left: 2vw;
+}
+
+.recentPays{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    padding: 20px;  
+    background: var(--white);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.recentPays{
+    display: none;
+}
+
+.recentPays.open-pay{
+    display: block;
+}
+
+.exit-view{
+    border: none;
+    right: 0;
+    width: 100%;
+    background-color: #29b6f6;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    padding: .75em 1.5em;
+    font-size: 1em;
+    height: 42px;
+}
+
+.page-info{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 0%;
+    display: grid;
+    grid-gap: 30px;
+}
+
+.recentHotels{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    padding: 20px;  
+    background: var(--white);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+.recentHotels{
+    display: none;
+}
+.recentHotels.open-room{
+    display: block;
+}
+.recentHotels .page-info{
+    width: 350px;
+    margin-left: -5px;
+}
+
+.recentHotels img{   
+    height: 200px;
+    width: 350px;
+}
+.exit-room{
+    background-color: #29b6f6;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    height: 42px;
+    border: none;
+    text-align: center;
+    width: 100%;
+}
+.btn-search{
+	border: none;
+}
+.datee{
+	margin-left: 6vw;
+	cursor: pointer;
+	border: none;
+	font-size: 15px;
+}
+.date{
+	margin-left: 20px;
+}
+.recentCustomerss{
+    display: none;
+}
+
+.recentCustomerss.open-info{
+    display: block;
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+ 
+ <!-- Home -->
+ <bean id="homeDAO" class="com.hotel.dao.HomeDAO">
+ 	<property name="sessionFactory" ref="mySessionFactory" />
+ </bean>
+ 
+ <bean id="homeService" class="com.hotel.service.HomeService">
+ 	<property name="homeDAO" ref="homeDAO"></property>
+ </bean>
+ 
+ <!-- Room -->
+ <bean id="roomDAO" class="com.hotel.dao.RoomDAO">
+ 	<property name="sessionFactory" ref="mySessionFactory" />
+ </bean>
+ 
+ <bean id="roomService" class="com.hotel.service.RoomService">
+ 	<property name="roomDAO" ref="roomDAO"></property>
+ </bean>
+ 
+ <!-- Rent Room -->
+ <bean id="rentDAO" class="com.hotel.dao.RentDAO">
+ 	<property name="sessionFactory" ref="mySessionFactory" />
+ </bean>
+ 
+ <bean id="rentService" class="com.hotel.service.RentService">
+ 	<property name="rentDAO" ref="rentDAO"></property>
+ </bean>
+ 
+  <!-- Service -->
+ <bean id="serviceDAO" class="com.hotel.dao.ServiceDAO">
+ 	<property name="sessionFactory" ref="mySessionFactory" />
+ </bean>
+ 
+ <bean id="serviceService" class="com.hotel.service.ServiceService">
+ 	<property name="serviceDAO" ref="serviceDAO"></property>
+ </bean>
+ 
+   <!-- Service Using -->
+ <bean id="serviceUsingDAO" class="com.hotel.dao.ServiceUsingDAO">
+ 	<property name="sessionFactory" ref="mySessionFactory" />
+ </bean>
+ 
+ <bean id="serviceUsingService" class="com.hotel.service.ServiceUsingService">
+ 	<property name="serviceUsingDAO" ref="serviceUsingDAO"></property>
+ 	<property name="rentDAO" ref="rentDAO"></property>
+ </bean>
+ 
+  <!-- Customer -->
+ <bean id="customerDAO" class="com.hotel.dao.CustomerDAO">
+ 	<property name="sessionFactory" ref="mySessionFactory" />
+ </bean>
+ 
+ <bean id="customerService" class="com.hotel.service.CustomerService">
+ 	<property name="customerDAO" ref="customerDAO"></property>
+ </bean>
+ <!-- Employee -->
+ <bean id="employeeDAO" class="com.hotel.dao.EmployeeDAO">
+ 	<property name="sessionFactory" ref="mySessionFactory" />
+ </bean>
+ 
+ <bean id="employeeService" class="com.hotel.service.EmployeeService">
+ 	<property name="employeeDAO" ref="employeeDAO"></property>
+ </bean>
+ 
+ <!-- Login -->
+ <bean id="loginDAO" class="com.hotel.dao.LoginDAO">
+ 	<property name="sessionFactory" ref="mySessionFactory" />
+ </bean>
+ 
+ <bean id="loginService" class="com.hotel.service.LoginService">
+ 	<property name="loginDAO" ref="loginDAO"></property>
+ </bean>
+
+</beans>
